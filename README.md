@@ -84,6 +84,27 @@ Run the test suite with:
 anchor test
 ```
 
+Result:
+
+```bash
+solana_vault
+Initialize vault transaction signature: 24RgfdCgFXBarHjJnYNQha8ApLvigueFBE6jcM4MkGhZDt3BhxFKuhKN1JammRo5skLrnCsdngNGRMj5JpWphqtr
+    ✔ Initializes a vault (349ms)
+Store note transaction signature: 37mXW37mwbNmKnytYPoJeDThM5YRtMmDAFPPxsC8zi3QrQYxxcm6XbEGmYkQjrPUwTuNGoYofDYFcvGexFKnsffs
+    ✔ Stores a note in the vault (425ms)
+Get note transaction signature: 3fctDZ2DqHnxLTkDEhUMMMeBsCr4tppJoVnHY73TLocWGA6ihH4PZzJjiFZcNks76Hxe4QG5dMtG7PN5jN9Sg7Ue
+Retrieved note: This is my secret note!
+    ✔ Retrieves a note from the vault (418ms)
+    ✔ Fails to store a note that's too long
+Update note transaction signature: 3B5SJVhHCj8Z7sXDeGnbnYZmp71wpBSfqUuA1KkwTSPzeGxomknwF3AA5YgPeryBuJsy4eKp2pF5QNLoLEfrmqkQ
+    ✔ Updates an existing note (422ms)
+
+
+  5 passing (2s)
+
+Done in 4.39s.
+```
+
 ## ✅ Security
 
 - Vaults are Program Derived Addresses (PDAs), owned and derived per user
